@@ -16,6 +16,6 @@
 // let output3 = arr.slice(1,3);
 // console.log(output3);
 function store(){
-    let arr = [12,312,312,21,212,3,32,3]
+    let arr = [12,312,312,21,212,3,32,337]
 window.localStorage.setItem('information',"Arpan")
 }
