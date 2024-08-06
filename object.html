@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Data</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #f0f0f0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:nth-child(odd) {
+      background-color: #fff;
+    }
+    .even-id {
+      background-color: #C5E1F5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Data</h1>
+  <table id="student-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Mobile Number</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody id="student-data">
+    </tbody>
+  </table>
+
+  <script src="./object.js"></script>
+</body>
+</html>
