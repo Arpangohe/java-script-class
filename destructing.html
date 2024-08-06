@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // destructing of array
+        let arr = [34,6,7,89,90,2,7,3,{}];
+
+        let [val1, val2,...reamining] = arr;
+        console.log(val1);
+        console.log(val2);
+        console.log(reamining)
+
+        let element1 = arr[0];
+        let element2 = arr[6];
+        console.log(element1,element2);
+
+        let obj = {
+            "id" : 1,
+            "name" : "arpan",
+            "age" : 22,
+            "course" : "FSD",
+            "mobile" : "8962427126"
+        }
+        let { name,...remain} = obj;
+        console.log(name);
+        console.log(remain);
+
+        // rest and spread operator
+
+        let array1 = [1,11,111,2,42,34,];
+        let array2 = [12,12,31,31,1334143,21];
+        let combie_array = array1.concat(array2);
+        console.log(combine_array);
+        
+        let combie_array_with_spread = [...array1,...array2]
+        console.log(combine_array_with_spread);
+
+        function show(...rest){
+
+            console.log(rest)
+        }
+        show(2,4,5,67,89)
+
+    </script>
+</body>
+</html>
